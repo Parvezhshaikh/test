@@ -1,5 +1,5 @@
 ---
-name: HelloWorld
+name: WorkflowHello
 
 on:
   push:
@@ -8,12 +8,17 @@ on:
   pull_request:
     branches:
       - main
-
 jobs:
   Hello:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Hello World
-        run: echo "Hello World"
-        shell: bash
+      - name: Run Hello World
+        run: node Hello World
+
+  Hello1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Hello World1
+        run: node Go to bye
