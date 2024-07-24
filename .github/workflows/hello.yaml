@@ -14,11 +14,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run Hello World
-        run: node Hello World
-
-  Hello1:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run Hello World1
-        run: node Go to bye
+        run: node Hello.js
